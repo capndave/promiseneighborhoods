@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Promise Neighborhoods Story</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.9.1/d3.js"></script><!--d3 link-->
+  <script src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script> <!--jquery-->
+  <script src = "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.1.0/leaflet.js"></script><!--leaflet-->
+  <script type = "text/javascript" src = "node_modules/waypoints/lib/jquery.waypoints.min.js"></script><!--waypoints-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">  <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet"><!--raleway font-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.1.0/leaflet.css"> <!--Leaflet Link-->
+  <link rel="stylesheet" href="css/style.css"> <!--CSS link-->
+</head>
+
+<body>
+  <div id="underConstructionOuter">
+    <div id="underConstructionInner">Under Construction</div>
+  </div>
+    <div id='outermostContainer'>
+      <div class="grid-outer" id="header">
+          <h1 class = "title-large" id="title">Meet The 2016 Grantees!</h1>
+          <h2 class = "title-medium" id="subtitle">Promise Neighborhoods</h2>
+      </div><!--End Header-->
+      <div class="content-main">
+        <div class="story-wrapper" id="story-wrapper_intro">
+          <div id="text1">
+            <p><span class = "firstcharacter">T</span>o support the federal Promise Zones project, the 2016 Promise Neighborhoods program awarded $165 million to six grantees over a five-year period. The grants provide funding to improve the educational and developmental outcomes of children and youth in distressed communities, and to transform those communities by increasing organizational capacities, building a continuum of cradle-to-career educational and family support systems, and developing the local infrastructure needed to support the long-term stability of the area. Each grantee is allowed wide leverage in how they use funds and may invest in a variety of solutions. We are excited to introduce the 2016 Promise Neighborhoods grantees and to show a few of the ways that the grantees serve their communities.
+            </p>
+          </div>
+        </div>
+            <div class="story-wrapper" id="story-wrapper_0">
+              <div class="story" data-organization="Los Angeles Promise Neighborhood in the Promise Zone" id="Los Angeles Promise Neighborhood in the Promise Zone">
+                <div class='mapContainer' id='mapContainer_0'>
+                  <h3>Los Angeles Promise Neighborhood in the Promise Zone</h2>
+                  <div id="map_0" class='maps'></div>
+                </div>
+                  <p>The Los Angeles Promise Neighborhood (LAPN) encompasses the impoverished and gentrifying areas of Hollywood and Pico-Union/Westlake. Students within the Promise Neighborhood perform below the district average, whether because of poverty, trauma, or other issues. The neighborhood has a high percentage of immigrants and is largely Hispanic/Latino. Additionally, the principals of LAPN high schools estimate that 10 percent of their students are unaccompanied immigrant minors, who lack stable housing, family supports, or access to food and other basic needs. LAPN provides a continuum of cradle-to-college and career services with the help of a large network of community, nonprofit, and governmental institutions. Their school-based services include early childhood development, emotional support, academic support, and college and career coaching. LAPN hopes that these services will ensure pathways out of poverty for area youth and their families.
+                  </p>
+                </div>
+              </div>
+              <div class="story-wrapper" id="story-wrapper_1">
+              <div class="story" data-organization="The Everett Freeman Promise Neighborhood Initiative">
+                <div class='mapContainer' id='mapContainer_1'>
+                  <h3>The Everett Freeman Promise Neighborhood Initiative (Northern California)</h2>
+                  <div id="map_1" class='maps'></div>
+                </div>
+                  <p>The Everett Freeman Promise Neighborhood Initiative is the only Tribal Council awarded a Promise Neighborhood Grant in 2016. The region boasts a very high percentage of Latin American immigrants in addition to its Native, White, and African American residents. In this area, roughly 50 percent of children are raised in households where a language other than English is the primary spoken language. Some students struggle due to language issues, which may diminish academic performance in the long term, limit opportunities, and create barriers to long-term economic stability. The Everett Freeman Promise Neighborhood has developed a number of strategies to reinforce and improve reading and writing instruction, in partnership with the County Department of Education, Stanford University, and the University of California – Berkeley. The Neighborhood also places particular focus on facilitating improved access to health care– a major concern in this isolated region.
+                  </p>
+                </div>
+              </div>
+              <div class="story-wrapper" id="story-wrapper_2">
+                <div class="story" data-organization="Deer Creek Promise Neighborhood">
+                  <div class='mapContainer' id='mapContainer_2'>
+                    <h3>Deer Creek Promise Neighborhood (Mississippi Delta)</h2>
+                    <div id="map_2" class='maps'></div>
+                  </div>
+                  <p>The Deer Creek Promise Neighborhood (DCPN) lies along the western border of Mississippi, in an isolated, poor, and central part of the Mississippi Delta. One of the poorest rural areas of the United States, the delta suffers from a variety of poverty-related health and educational disparities. Deer Creek has high rates of teen pregnancy, intergenerational poverty, and domestic violence. To equip children to succeed, DCPN collaborates with regional community partners to 1) improve kindergarten readiness, 2) improve grade-level reading proficiency at the beginning of school entry, 3) improve English and math proficiency for students entering junior high and high school, and 4) prepare students for college and career.
+                  </p>
+                </div>
+              </div>
+              <div class="story-wrapper" id="story-wrapper_3">
+                <div class="story" data-organization="Knox Promise Neighborhood">
+                  <div class='mapContainer' id='mapContainer_3'>
+                    <h3>Knox Promise Neighborhood (Kentucky)</h2>
+                    <div id="map_3" class='maps'></div>
+                  </div>
+                    <p>The Knox Promise Neighborhood (KPN) occupies a poor and isolated part of rural Kentucky. Due to its extreme remoteness, many residents lack easy access to a number of services.  KPN addresses educational, income, and health inequities by offering cradle-to-career community services to area children, in conjunction with community partners. Keeping the community connected to the work of KPN is a centerpiece of their work. Partnerships with area universities, school districts, and the KCEOC Community Action Partnership help to engage children and families as well as professionals, service providers, and members of the community.
+                    </p>
+                  </div>
+              </div>
+              <div class="story-wrapper" id="story-wrapper_4">
+                <div class="story" data-organization="Promise of a Strong Partnership for Education Reform (ProSPER)">
+                  <div class='mapContainer' id='mapContainer_4'>
+                    <h3>Promise of a Strong Partnership for Education Reform (West Philadelphia)</h2>
+                    <div id="map_4" class='maps'></div>
+                  </div>
+                    <p>The Promise of Strong Partnership for Education Reform (ProSPER) initiative links Drexel University with a number of community partners and anchor institutions in West Philadelphia. One of the most dangerous urban areas in the United States, West Philadelphia struggles with high rates of intergenerational poverty, drug abuse, and physical violence. At the same time, both the University of Pennsylvania and Drexel University border the neighborhood, while a number of tech firms, community institutions, and other resources have a regional presence. Drexel promotes the partnership between these institutions as an “innovation hub” – a focal point for communication and creativity among tech innovators, researchers, and the community. Leveraging this proximity to its advantage, ProSPER uses innovation district partnerships to provide area children an education grounded in experiential learning and technological awareness.
+                    </p>
+                  </div>
+              </div>
+              <div class="story-wrapper" id="story-wrapper_5">
+                <div class="story" data-organization="Camden Promise Neighborhood Implementation">
+                  <div class='mapContainer' id='mapContainer_5'>
+                    <h3>Camden Promise Neighborhood Implementation (New Jersey)</h2>
+                    <div id="map_5" class='maps'></div>
+                  </div>
+                    <p>Located just a few miles from Philadelphia’s ProSPER, the Camden Promise Neighborhood works to enrich one of the most impoverished urban regions of the country. Camden, NJ - historically a hub of blue-collar industry – has seen massive factory closures, depopulation, and subsequent, rampant unemployment. After suffering years of severe public safety issues, the website Neighborhood Scout described Camden’s crime rate of 57 per 1,000 residents as the “highest in America compared to all communities of all sizes, from the smallest of towns to the very largest cities.” The Neighborhood recently launched a summer program to educate children and ensure their safety, and has implemented a number of related school and after-school programs.
+                    </p>
+              </div>
+            </div>
+          </div> <!--End Body-->
+
+      <div class="footer">
+      </div><!--End Footer-->
+
+    </div><!--End Outer Grid-->
+</div><!--End Container-->
+
+<script type = "text/javascript" src="javascript.js"></script>
+</body>
+</html>

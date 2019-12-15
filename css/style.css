@@ -1,0 +1,271 @@
+:root{
+  --backgroundColor: #F7F7F7; /*light grey*/
+  --accentColor: #1A1A1A;     /*blue*/
+  --colorBlue: #1986af;
+  --colorBrown: #c57f0d;
+  --colorTeal: #1ab898;
+  --colorLightBlue: #7fc8eb;
+  --colorRed: #c55b4d;
+}
+
+html, body {
+  margin: 0;
+  font-size: 20px;
+  background: var(--backgroundColor);
+  color: #1D1D1D;
+  font-family: 'EB Garamond', serif;
+  font-weight: 500;
+}
+
+#underConstructionInner {
+    margin: 0;
+    position: absolute;
+    top: 50px;
+    text-align: center;
+}
+
+#underConstructionOuter{
+  width: 100%;
+  height: 200px;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--accentColor);
+  color: var(--backgroundColor);
+  text-align: center;
+}
+
+#pnLogo {
+  width: 100%;
+  max-width: 400px;
+}
+
+#header {
+  padding: 0 1em 1em 1em;
+  grid-column: span 3;
+  text-align: center;
+  font-size: 1rem;
+  color: var(--accentColor);
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+
+.content-main {
+  margin: auto;
+  margin-bottom: 5rem;
+  padding: 10px;
+}
+
+h3 {
+  font-size: 1.1em;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: .95rem;
+  line-height: 170%;
+  margin: 0;
+  padding: 0;
+}
+.title-large {
+    font-size: 2rem;
+    margin-bottom:1rem;
+}
+
+.title-medium {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.firstcharacter {
+  float: left;
+  font-size: 3rem;
+  line-height: 3.74rem;
+  padding-right: 5px;
+  padding-left: 3px;
+}
+
+.leaflet-popup, .leaflet-popup-content-wrapper, .leaflet-popup-content {
+  font-size: .75rem;
+  font-family: 'Raleway', 'Open Sans', sans-serif;
+}
+
+.mapContainer {
+  position: sticky;
+  top: 0;
+  background: var(--backgroundColor);
+  padding-bottom: 1rem;
+}
+
+@keyframes fadeIn {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+#map-main {
+  margin: auto;
+  margin-top: -10%;
+  margin-bottom: 0;
+  margin-left: -13%;
+  height: 40vh;
+}
+
+.maps {
+  margin: auto;
+  height: 40vh;
+  border: 1px solid black;
+}
+
+.story {
+  margin-bottom: 1rem;
+}
+
+.annotationText {
+  color: #1A83B8;
+  font-family: 'Raleway', 'Open Sans', sans-serif;
+  margin: 0;
+}
+.leaflet-container {
+    background-color:rgba(255,0,0,0.0);
+}
+
+#text1 {
+  margin-bottom: 1rem;
+}
+
+.footer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (min-width: 550px) {
+     /* start of widescreen styles */
+     #underConstructionInner {
+         margin: 0;
+         position: absolute;
+         width: 100%;
+         top: 80px;
+         text-align: center;
+     }
+
+     #underConstructionOuter{
+       width: 100%;
+       height: 200px;
+       font-size: 2rem;
+       font-weight: bold;
+       font-family: "Open Sans", sans-serif;
+       background-color: var(--accentColor);
+       color: white;
+       text-align: center;
+     }
+
+     #header{
+       padding-bottom: 1rem;
+     }
+
+     .title-large {
+         font-size: 2.5rem;
+     }
+     .content-main {
+       padding: 0px;
+       margin-bottom: 0;
+     }
+
+     .story-wrapper:not(#story-wrapper_intro){
+       min-height: 100vh;
+       margin: 0;
+       padding: 0;
+     }
+     .story{
+       max-width: 1200px;
+       min-height: 100vh;
+       padding-top: 10px;
+       margin: auto;
+       position: relative;
+     }
+     #story-wrapper_intro {
+       height: calc(100vh - 360px);
+     }
+     #story-wrapper_0, #mapContainer_0 {
+       background-color: #cce1e9;
+     }
+     #story-wrapper_1, #mapContainer_1 {
+       background-color: #e2d4bd;
+     }
+     #story-wrapper_2, #mapContainer_2 {
+       background-color: #ccebe5;
+     }
+     #story-wrapper_3, #mapContainer_3 {
+       background-color: #d3e2e9;
+     }
+     #story-wrapper_4, #mapContainer_4 {
+       background-color: #edd9d6;
+     }
+
+     #text1 {
+       max-width: 1200px;
+       height: calc(100vh - 370px);
+       margin: auto;
+       margin-bottom: 0;
+     }
+
+     h3.title {
+       font-family: "Open Sans", sans-serif;
+       color: var(--accentColor);
+       margin-bottom: 1rem;
+       padding-top: 1rem;
+       position: static;
+       text-align: center;
+       font-size: 1.5rem;
+     }
+
+     p {
+       font-size: 1.1rem;
+       line-height: 170%;
+       margin: 0;
+       padding: 0;
+       display: inline;
+       float: left;
+     }
+
+     .maps {
+       width: calc(33% - 10px);
+       margin: 7px 20px 0 0;
+       animation: fadeIn 4s;
+       display: inline;
+       float: left;
+    }
+
+      .mapContainer {
+        padding-bottom: 0;
+        position: static;
+      }
+
+      .insideMapContainerText {
+        line-height: 170%;
+      }
+
+      .buttonContainer{
+        bottom: 0;
+        padding-bottom: 30px;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        display: block;
+      }
+      .buttonContainer:hover{
+        opacity: .4;
+      }
+      #downButton, #upButton{
+        width: 60px;
+        /*bottom: 0;*/
+      }
+      #firstButton.buttonContainer {
+        max-width: 1200px;
+        padding-bottom: 5px;
+      }
+}
